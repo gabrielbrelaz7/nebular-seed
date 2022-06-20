@@ -10,10 +10,7 @@ describe('HomeComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [
-        NbThemeModule.forRoot(),
-        NbCardModule,
-        NbButtonModule,
-        NbDialogModule.forRoot()
+
       ],
       declarations: [ HomeComponent ]
     })

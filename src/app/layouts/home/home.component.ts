@@ -1,5 +1,4 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
-import { NbDialogService } from '@nebular/theme';
 
 @Component({
   selector: 'app-home',
@@ -8,18 +7,10 @@ import { NbDialogService } from '@nebular/theme';
 })
 export class HomeComponent implements OnInit {
 
-  items = [
-    {
-      title: 'Logout',
-    },
-  ];
 
-  constructor(private dialogService: NbDialogService) { }
+  constructor() { }
 
   ngOnInit() { }
 
-  openDialog(dialog: TemplateRef<any>) {
-    this.dialogService.open(dialog);
-  }
 
 }
