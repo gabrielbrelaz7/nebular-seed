@@ -4,6 +4,7 @@ import { NbButtonModule, NbCardModule, NbCheckboxModule, NbDialogModule, NbInput
 
 import { AuthComponent } from './auth.component';
 import { AuthRoutingModule } from './auth-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AuthRoutingModule } from './auth-routing.module';
     NbCheckboxModule,
     AuthRoutingModule,
     NbDialogModule.forRoot(),
-    
+    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class AuthModule { }
