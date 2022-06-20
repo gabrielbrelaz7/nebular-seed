@@ -2,19 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NbButtonModule, NbCardModule, NbDialogModule } from '@nebular/theme';
 
-import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from './home.component';
+import { HomepageComponent } from './homepage.component';
+import { HomepageRoutingModule } from './homepage-routing.module';
 
 @NgModule({
   declarations: [
-    HomeComponent,
+    HomepageComponent,
   ],
   imports: [
     CommonModule,
     NbCardModule,
     NbButtonModule,
     NbDialogModule.forRoot(),
-    HomeRoutingModule,
+    HomepageRoutingModule
   ]
 })
-export class HomeModule { }
+export class HomepageModule { }

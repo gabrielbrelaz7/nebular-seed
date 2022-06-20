@@ -8,6 +8,12 @@ import { NbDialogService } from '@nebular/theme';
 })
 export class HomeComponent implements OnInit {
 
+  items = [
+    {
+      title: 'Logout',
+    },
+  ];
+
   constructor(private dialogService: NbDialogService) { }
 
   ngOnInit() { }
