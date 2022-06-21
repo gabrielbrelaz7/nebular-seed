@@ -18,12 +18,12 @@
                         </div>
 
                         <div class="msgError" *ngIf="formUsuario.controls.email.errors?.required 
-                            && formUsuario.controls.email.touched">               
+                            && formError">               
                             Email requerido  
                         </div>
 
                         <div class="msgError" *ngIf="formUsuario.controls.email.errors?.email 
-                        && formUsuario.controls.email.touched">               
+                        && formError">               
                         Email deve ser válido   
                     </div>
 
@@ -39,17 +39,16 @@
                             </div>
 
                             <div class="msgError" *ngIf="formUsuario.controls.senha.errors?.required 
-                            && formUsuario.controls.senha.touched">               
+                            && formError">               
                             Senha requerida  
                         </div>
 
                         <div class="msgError" *ngIf="formUsuario.controls.senha.errors?.minlength 
-                        && formUsuario.controls.senha.touched">               
+                        && formError">               
                         Senha deve ter no mínimo 6 caracteres  
                         </div>
     
-        
-                            <button type="submit" nbButton="nbButton" status="success">Login</button>
+                            <button nbButton="nbButton" status="success">Login</button>
                         </form>
                     </nb-card-body>
                 </nb-card>
