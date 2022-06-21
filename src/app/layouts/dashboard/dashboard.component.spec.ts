@@ -1,24 +1,23 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { NbButtonModule, NbCardModule, NbDialogModule, NbThemeModule } from '@nebular/theme';
 
-import { HomeComponent } from './home.component';
+import { DashboardComponent } from './dashboard.component';
 
 describe('HomeComponent', () => {
-  let component: HomeComponent;
-  let fixture: ComponentFixture<HomeComponent>;
+  let component: DashboardComponent;
+  let fixture: ComponentFixture<DashboardComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [
 
       ],
-      declarations: [ HomeComponent ]
+      declarations: [ DashboardComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeComponent);
+    fixture = TestBed.createComponent(DashboardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -2,13 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbSidebarService, NbThemeModule } from '@nebular/theme';
+import { NbButtonModule, NbCardModule, NbDialogModule, NbIconModule, NbInputModule, NbLayoutModule, NbSidebarService, NbThemeModule, NbToastrModule } from '@nebular/theme';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { AppComponent } from './app.component';
+import { QueFacoComponent } from './modules/que-faco/que-faco.component';
 
 
 @NgModule({
@@ -22,6 +21,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     HttpClientModule,
     NbThemeModule.forRoot({ name: 'default' }),
+    NbToastrModule.forRoot(),
+    NbDialogModule.forRoot(),
+
   ],
   providers: [NbSidebarService],
   bootstrap: [AppComponent]

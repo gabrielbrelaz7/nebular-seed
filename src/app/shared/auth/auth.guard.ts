@@ -15,6 +15,7 @@ export class AuthGuard implements CanActivate {
 		if(token) {
 			return true;
 		} else {
+			console.log("Entrando aqui");
 			this.router.navigate(['login']);
 			return false;
 		}
