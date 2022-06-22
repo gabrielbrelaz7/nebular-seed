@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HobbyComponent } from 'src/app/modules/hobby/hobby.component';
 import { HomepageComponent } from 'src/app/modules/homepage/homepage.component';
 import { QueFacoComponent } from 'src/app/modules/que-faco/que-faco.component';
 import { SobreMimComponent } from 'src/app/modules/sobre-mim/sobre-mim.component';
@@ -30,6 +31,11 @@ const routes: Routes = [
       {
         path:'o-que-faco',
         component: QueFacoComponent,
+      },
+
+      {
+        path:'hobby',
+        component: HobbyComponent,
       },
 
 

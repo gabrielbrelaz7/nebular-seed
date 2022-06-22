@@ -14,7 +14,7 @@ export class QueFacoService {
 	}
 
   updateWebDesign(data: WebDesign ) {
-		return this.http.put(`http://localhost:3000/sobre-mim/1`, data);
+		return this.http.put(`http://localhost:3000/o-que-faco/1`, data);
 	}
 
   updateFrontEnd(data: FrontEnd ) {

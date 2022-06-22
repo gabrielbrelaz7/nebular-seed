@@ -49,7 +49,9 @@ export class QueFacoComponent implements OnInit {
 
   ngOnInit(): void {
     this.queFacoService.read().subscribe((response: QueFaco) => {
-      this.queFaco = response[0];
+      this.webdesign = response[0];
+      this.frontEnd = response[1];
+      this.backEnd = response[2];
     })
   }
 
@@ -61,7 +63,7 @@ export class QueFacoComponent implements OnInit {
     } else {
       this.queFacoService.updateWebDesign(this.formWebDesign.value).subscribe(() => {
         this.router.navigate(['/']);
-        this.toastrService.primary('Atualizado com sucesso!', 'Seção Sobre mim');
+        this.toastrService.primary('Atualizado com sucesso!', 'Web Design');
       })
 
     }

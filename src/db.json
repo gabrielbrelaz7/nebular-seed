@@ -8,33 +8,33 @@
   ],
   "sobre-mim": [
     {
-      "texto": "Residente atual na cidade do Rio de Janeiro e desenvolvedor web com aproximadamente 5 anos de experiência em desenvolvimento de software web.\nAtualmente trabalhando em ambiente de trabalho presencial em um espaço de escritório compartilhado (coworking).\nGosto do ambiente corporativo, por estar junto de uma equipe com profissionais com o mesmo objetivo.",
+      "texto": "Residente atual na cidade do Rio de Janeiro e desenvolvedor web com aproximadamente 5 anos de experiência em desenvolvimento de software web.\n\nAtualmente trabalhando em ambiente de trabalho presencial em um espaço de escritório compartilhado (coworking).",
       "id": 1
     }
   ],
-
   "o-que-faco": [
     {
-      "webDesign":    
-        {
-          "texto": "Residente atual na cidade do Rio de Janeiro e desenvolvedor web com aproximadamente 5 anos de experiência em desenvolvimento de software web.\nAtualmente trabalhando em ambiente de trabalho presencial em um espaço de escritório compartilhado (coworking).\nGosto do ambiente corporativo, por estar junto de uma equipe com profissionais com o mesmo objetivo.",
-          "id": 1
-        },
-
-      "frontEnd": 
-        {
-          "texto": "Residente atual na cidade do Rio de Janeiro e desenvolvedor web com aproximadamente 5 anos de experiência em desenvolvimento de software web.\nAtualmente trabalhando em ambiente de trabalho presencial em um espaço de escritório compartilhado (coworking).\nGosto do ambiente corporativo, por estar junto de uma equipe com profissionais com o mesmo objetivo.",
-          "id": 1
-        },
-
-      "backEnd":    
-        {
-          "texto": "Residente atual na cidade do Rio de Janeiro e desenvolvedor web com aproximadamente 5 anos de experiência em desenvolvimento de software web.\nAtualmente trabalhando em ambiente de trabalho presencial em um espaço de escritório compartilhado (coworking).\nGosto do ambiente corporativo, por estar junto de uma equipe com profissionais com o mesmo objetivo.",
-          "id": 1
-        }
+      "texto": "Residente atual na cidade do Rio de Janeiro e desenvolvedor web com aproximadamente 5 anos de experiência em desenvolvimento de software web.\n\nAtualmente trabalhando em ambiente de trabalho presencial em um espaço de escritório compartilhado (coworking).\n\nGosto do ambiente corporativo, por estar junto de uma equipe com profissionais com o mesmo objetivo.",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "frontEnd": {
+        "texto": "Residente atual na cidade do Rio de Janeiro e desenvolvedor web com aproximadamente 5 anos de experiência em desenvolvimento de software web.\nAtualmente trabalhando em ambiente de trabalho presencial em um espaço de escritório compartilhado (coworking).\nGosto do ambiente corporativo, por estar junto de uma equipe com profissionais com o mesmo objetivo."
+      }
+    },
+    {
+      "id": 3,
+      "backEnd": {
+        "texto": "Residente atual na cidade do Rio de Janeiro e desenvolvedor web com aproximadamente 5 anos de experiência em desenvolvimento de software web.\nAtualmente trabalhando em ambiente de trabalho presencial em um espaço de escritório compartilhado (coworking).\nGosto do ambiente corporativo, por estar junto de uma equipe com profissionais com o mesmo objetivo."
+      }
     }
   ],
-
+  "video": [
+    {
+      "id": 1
+    }
+  ],
   "usuarios": [
     {
       "email": "gabrielbrelaz@gmail.com",

@@ -1,1 +1,34 @@
-<p>que-faco works!</p>
+<nb-card>
+    <nb-card-header>
+        Web Design
+    </nb-card-header>
+    <nb-card-body>
+        <button nbButton="nbButton" status="success" (click)="voltar()">Voltar</button>
+        <form [formGroup]="formWebDesign" (ngSubmit)="salvarFormularioWebDesign()">
+            <div class="form-group">
+                <label class="label">Título</label>
+                <textarea 
+                nbInput 
+                fullWidth 
+                placeholder="Texto sobre webdesign"
+                rows="10"
+                formControlName="texto"
+                [(ngModel)]="webdesign.texto"
+                required
+                >
+                </textarea>
+  
+            </div>
+
+            <div
+                class="msgError"
+                *ngIf="formWebDesign.controls.texto.errors?.required
+                        && formError">
+                Texto requerido
+            </div>
+
+            <button nbButton="nbButton" status="success">Atualizar</button>
+                
+            </form>
+        </nb-card-body>
+    </nb-card>
