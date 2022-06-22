@@ -76,7 +76,7 @@ export class QueFacoComponent implements OnInit {
     } else {
       this.queFacoService.updateFrontEnd(this.formFrontEnd.value).subscribe(() => {
         this.router.navigate(['/']);
-        this.toastrService.primary('Atualizado com sucesso!', 'Seção Sobre mim');
+        this.toastrService.primary('Atualizado com sucesso!', 'Frontend');
       })
 
     }
@@ -87,9 +87,9 @@ export class QueFacoComponent implements OnInit {
     if(this.formBackEnd.invalid) {
       this.formError = true;
     } else {
-      this.queFacoService.updateBackEnd(this.formWebDesign.value).subscribe(() => {
+      this.queFacoService.updateBackEnd(this.formBackEnd.value).subscribe(() => {
         this.router.navigate(['/']);
-        this.toastrService.primary('Atualizado com sucesso!', 'Seção Sobre mim');
+        this.toastrService.primary('Atualizado com sucesso!', 'Backend');
       })
 
     }

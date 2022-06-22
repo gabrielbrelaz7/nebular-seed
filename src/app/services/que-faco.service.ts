@@ -18,10 +18,10 @@ export class QueFacoService {
 	}
 
   updateFrontEnd(data: FrontEnd ) {
-		return this.http.put(`http://localhost:3000/sobre-mim/1`, data);
+		return this.http.put(`http://localhost:3000/o-que-faco/2`, data);
 	}
 
   updateBackEnd(data: BackEnd ) {
-		return this.http.put(`http://localhost:3000/sobre-mim/1`, data);
+		return this.http.put(`http://localhost:3000/o-que-faco/3`, data);
 	}
 }

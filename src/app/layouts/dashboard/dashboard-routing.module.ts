@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ContatoComponent } from 'src/app/modules/contato/contato.component';
+import { FraseComponent } from 'src/app/modules/frase/frase.component';
 import { HobbyComponent } from 'src/app/modules/hobby/hobby.component';
 import { HomepageComponent } from 'src/app/modules/homepage/homepage.component';
 import { QueFacoComponent } from 'src/app/modules/que-faco/que-faco.component';
@@ -34,8 +36,18 @@ const routes: Routes = [
       },
 
       {
+        path:'frase',
+        component: FraseComponent,
+      },
+
+      {
         path:'hobby',
         component: HobbyComponent,
+      },
+
+      {
+        path:'contato',
+        component: ContatoComponent,
       },
 
 

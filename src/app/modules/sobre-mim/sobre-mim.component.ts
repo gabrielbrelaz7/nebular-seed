@@ -34,7 +34,6 @@ export class SobreMimComponent implements OnInit {
     })
   }
 
-
   salvarFormulario():void {
 
     if(this.formSobreMim.invalid) {

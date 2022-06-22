@@ -7,10 +7,12 @@ import { NbButtonModule, NbCardModule, NbDialogModule, NbIconModule, NbInputModu
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
-import { QueFacoComponent } from './modules/que-faco/que-faco.component';
-import { VideoComponent } from './components/video/video.component';
-import { HobbyComponent } from './modules/hobby/hobby.component';
+// import { NgxMaskModule, IConfig } from 'ngx-mask';
 
+
+// const maskConfig: Partial<IConfig> = {
+//   validation: false,
+// };
 
 @NgModule({
   declarations: [
@@ -22,9 +24,10 @@ import { HobbyComponent } from './modules/hobby/hobby.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    NbThemeModule.forRoot({ name: 'default' }),
+    NbThemeModule.forRoot({ name: 'default' }), 
     NbToastrModule.forRoot(),
     NbDialogModule.forRoot(),
+    // NgxMaskModule.forRoot(maskConfig),
 
   ],
   providers: [NbSidebarService],

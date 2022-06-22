@@ -53,14 +53,17 @@
   </div>
 
   <div class="col-sm-3">
-    <nb-card>
-      <nb-card-header>
-        <nb-icon icon="browser-outline"></nb-icon>
-        Seção
-      </nb-card-header>      <nb-card-body>
-        <h3>Frase</h3>
-      </nb-card-body>
-    </nb-card>
+    <a [routerLink]="['frase']">
+        <nb-card>
+          <nb-card-header>
+            <nb-icon icon="browser-outline"></nb-icon>
+            Seção
+          </nb-card-header>      
+          <nb-card-body>
+            <h3>Frase</h3>
+          </nb-card-body>
+        </nb-card>
+    </a>
   </div>
 
   <div class="col-sm-3">
@@ -104,16 +107,18 @@
 
 
   <div class="col-sm-3">
-    <nb-card>
-      <nb-card-header>
-        <nb-icon icon="browser-outline"></nb-icon>
-        Seção
-      </nb-card-header>
-      <nb-card-body>
-        <h3>Contato</h3>
-      </nb-card-body>
-    </nb-card>
-  </div> 
+    <a [routerLink]="['contato']">
+        <nb-card>
+          <nb-card-header>
+            <nb-icon icon="browser-outline"></nb-icon>
+            Seção
+          </nb-card-header>      
+          <nb-card-body>
+            <h3>Contato</h3>
+          </nb-card-body>
+        </nb-card>
+    </a>
+  </div>
   
 
 </div>

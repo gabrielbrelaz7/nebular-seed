@@ -15,6 +15,10 @@ import { SobreMimComponent } from 'src/app/modules/sobre-mim/sobre-mim.component
 import { QueFacoComponent } from 'src/app/modules/que-faco/que-faco.component';
 import { HobbyComponent } from 'src/app/modules/hobby/hobby.component';
 import { VideoComponent } from 'src/app/components/video/video.component';
+import { FraseComponent } from 'src/app/modules/frase/frase.component';
+import { ContatoComponent } from 'src/app/modules/contato/contato.component';
+// import { NgxMaskModule } from 'ngx-mask';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +30,10 @@ import { VideoComponent } from 'src/app/components/video/video.component';
     SobreMimComponent,
     QueFacoComponent,
     HobbyComponent,
-    VideoComponent
+    VideoComponent,
+    FraseComponent,
+    ContatoComponent,
+
   ],
   imports: [
     CommonModule,
@@ -43,6 +50,8 @@ import { VideoComponent } from 'src/app/components/video/video.component';
 
     FormsModule,
     ReactiveFormsModule,
+    // NgxMaskModule.forChild()
+    
   ]
 })
 export class DashboardModule { }
