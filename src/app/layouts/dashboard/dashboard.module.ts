@@ -17,7 +17,13 @@ import { HobbyComponent } from 'src/app/modules/hobby/hobby.component';
 import { VideoComponent } from 'src/app/components/video/video.component';
 import { FraseComponent } from 'src/app/modules/frase/frase.component';
 import { ContatoComponent } from 'src/app/modules/contato/contato.component';
-// import { NgxMaskModule } from 'ngx-mask';
+import { IConfig, NgxMaskModule } from 'ngx-mask';
+
+export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
+
+const maskConfig: Partial<IConfig> = {
+  validation: false,
+};
 
 
 @NgModule({
@@ -51,7 +57,10 @@ import { ContatoComponent } from 'src/app/modules/contato/contato.component';
     FormsModule,
     ReactiveFormsModule,
     // NgxMaskModule.forChild()
+    NgxMaskModule.forRoot(maskConfig)
+
     
-  ]
+  ],
+  
 })
 export class DashboardModule { }

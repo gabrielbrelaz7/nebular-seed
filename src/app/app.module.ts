@@ -7,12 +7,13 @@ import { NbButtonModule, NbCardModule, NbDialogModule, NbIconModule, NbInputModu
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
-// import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { IConfig, NgxMaskModule } from 'ngx-mask';
 
+export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
 
-// const maskConfig: Partial<IConfig> = {
-//   validation: false,
-// };
+const maskConfig: Partial<IConfig> = {
+  validation: false,
+};
 
 @NgModule({
   declarations: [
@@ -27,9 +28,10 @@ import { AppComponent } from './app.component';
     NbThemeModule.forRoot({ name: 'default' }), 
     NbToastrModule.forRoot(),
     NbDialogModule.forRoot(),
-    // NgxMaskModule.forRoot(maskConfig),
+    NgxMaskModule.forRoot(maskConfig),
 
   ],
+
   providers: [NbSidebarService],
   bootstrap: [AppComponent]
 })
